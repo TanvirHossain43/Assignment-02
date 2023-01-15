@@ -3,7 +3,10 @@
     padding: 0;
 }
 
-/* some common styles */
+/* ----------------------
+some common styles
+------------------------*/
+
 body {
     font-family: 'Work Sans', sans-serif;
 }
@@ -12,7 +15,9 @@ body {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
-/* header styles */
+/*------------------- 
+header styles
+-------------------- */
 
 .header-section {
     display: flex;
@@ -45,7 +50,9 @@ body {
 
 }
 
-/* banner styles */
+/*-----------------------
+    banner styles
+ -------------------- --*/
 
 .banner-info {
     width: 900px;
@@ -96,7 +103,9 @@ body {
     height: 100%;
 }
 
-/* team section styles */
+/*------------------------
+ team section styles 
+ -------------------------*/
 
 
 .team-section {
@@ -129,11 +138,6 @@ body {
     height: 100%;
 }
 
-.quick-list-part {
-    /* width: 500px; */
-
-}
-
 .quick-list-part h1 {
     font-size: 30px;
     color: #131313;
@@ -158,16 +162,17 @@ body {
     color: #727272;
 }
 
-/* Feature section styles */
+/* ----------------------------
+     Feature section styles
+--------------------------- */
+
+
 .feature-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
     padding: 100px 160px;
-    /* height: 100vh; */
     margin-bottom: 10px;
-
-
 }
 
 .feature-container {
@@ -225,8 +230,8 @@ body {
     height: 60px;
     z-index: 2;
     position: absolute;
-    left: -20px;
-    top: 653px;
+    left: -25px;
+    top: 660px;
     text-align: center;
     border-radius: 10px;
     color: #FFFFFF;
@@ -244,7 +249,10 @@ body {
     font-weight: 500;
 }
 
-/* some facts item styles */
+/*-----------------------------
+ some facts item styles 
+ ------------------------------*/
+
 .fact-section {
     margin-top: 100px;
 }
@@ -268,6 +276,7 @@ body {
     width: 150px;
     height: 150px;
     text-align: center;
+
 }
 
 .fact-item p {
@@ -285,11 +294,13 @@ body {
 }
 
 .fact-item:hover {
-    transform: rotate(3);
-    transition: all 0.3;
+    transform: scale(1.5);
+    transition: 0.5;
 }
 
-/* sponspors section styles */
+/* -----------------------------
+sponspors section styles
+------------------------------ */
 
 .sponspors-section {
     padding: 40px;
@@ -325,7 +336,10 @@ body {
     width: 60%;
 }
 
-/* contact section */
+/* ----------------------
+contact section
+--------------------- */
+
 .contact-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -356,7 +370,9 @@ textarea {
     width: 300px;
 }
 
-/* footer styles */
+/*-------------------
+ footer styles 
+ ----------------------*/
 footer {
 
     text-align: center;
@@ -371,15 +387,9 @@ footer p {
 }
 
 
-
-
-
-
-
-
-
-
-/* Responsive styles */
+/*------------------------------
+         Responsive styles
+---------------------------------- */
 
 @media screen and (max-width:576px) {
     .header-section {
@@ -471,9 +481,6 @@ footer p {
         width: 0;
         margin: 20px 0;
         row-gap: 10px;
-
-
-
     }
 
     .fact-item {
@@ -488,14 +495,22 @@ footer p {
     .sponspors-description {
         width: 350px;
     }
-    .sponspors{
-        grid-template-columns: repeat(1,1fr);
+
+    .sponspors {
+        grid-template-columns: repeat(1, 1fr);
         row-gap: 10px;
     }
-    .contact-section{
-        grid-template-columns: repeat(1,1fr);
+
+    .contact-section {
+        grid-template-columns: repeat(1, 1fr);
         width: auto;
         padding: 20px 10px;
-       
+
     }
+
+    footer p {
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
 }
